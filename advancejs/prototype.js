@@ -56,7 +56,7 @@ let variabel_array = [6,5,4]           //* inisiasi variabel_array menjadi sebua
 //! BELAKANG LAYAR
 let variabel_array = new Array(); //* inilah yang sebenarnya terjadi di belakang layar
 function Array(){                                       //* yg terjadi di belakang layar
-    let this = Object.create(Array.prototype)
+    // let this = Object.create(Array)
     this.sort = function(){                             //* yang terjadi saat buat built in function
         return "blalabla bisa sort array"
     }
