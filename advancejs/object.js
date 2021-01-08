@@ -5,7 +5,7 @@
 let objek = {}     //* semudah 1 baris diatas dengan assign {}
 let manusia = {
 
-    nama    : "reza",      //* penulisan property pada object, ada tanda (,) saat mengakhiri
+    nama    : "reza",      //* penulisan property pa da object, ada tanda (,) saat mengakhiri
     tangan  : 2,
     kaki    : 2,
     energi  : 0,

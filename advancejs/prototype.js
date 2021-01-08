@@ -48,3 +48,20 @@ class Manusia{
 }
 
 let reza = new Manusia("Reza",17);
+
+//! Hampit semua yang dijavascript itu objek
+
+let variabel_array = [6,5,4]           //* inisiasi variabel_array menjadi sebuah array
+
+//! BELAKANG LAYAR
+let variabel_array = new Array(); //* inilah yang sebenarnya terjadi di belakang layar
+function Array(){                                       //* yg terjadi di belakang layar
+    let this = Object.create(Array.prototype)
+    this.sort = function(){                             //* yang terjadi saat buat built in function
+        return "blalabla bisa sort array"
+    }
+}
+
+//! Hapus belakang layar agar ini bisa muncul
+console.log(variabel_array.sort())   //* makanya kita bisa make built in function yg SANGAT BANYAKK
+
