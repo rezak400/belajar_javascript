@@ -17,7 +17,7 @@ let manusia = {
 }
 
 //! Function Declaration
-//todo menggunakan skema class dan objek / cetak biru dan objek/ rangkaian dan nyata
+//todo menggunakan skema class dan objek / cetak biru dan objek/ rangkaian dan nyata tapi tidak real penyimpanan
 //? Function ini ibaratnya blueprint/class yang nantinya akan diisi objek nyata
 function Manusia(nama,umur){
     let manusia = {};       //* inisiasi objek biar nanti diisi
@@ -33,6 +33,7 @@ function Manusia(nama,umur){
     return manusia   //* mereturn objek yang sudah diisi
 }
 
+//? Sampai disini baru kita buat the REAL OBJEK, karna sebelumnya hanya membuat mesinnya
 let manusia1 = Manusia("Reza",18)   //* membuat objek manusia pertama bernama Reza dan berumur 18
 let manusia2 = Manusia("Ayiel",15) //* membuat objek kedua bernama ayiel
 
@@ -64,12 +65,14 @@ function Motor(nama,tahun_keluar){
     return motor
 }
 
+//? Sampai disini baru kita buat the REAL OBJEK, karna sebelumnya hanya membuat mesinnya
 let supra = Motor("supra",1999);
 let mio = Motor("Mio", 2000);
 
 
-//! Constructon Function
+//! Constructor Function
 //todo sama dengan sebelumnya
+//? Metode ini yang akan dikembangkan menjadi class pada es6 javascript 
 //? bedanya hanya syntax dan penambahan keyword ("new" operator)
 
 //* Bisa juga memisahkan method diluar objek
@@ -88,6 +91,7 @@ function Mobil(nama,tahun_keluar){
     this.jalan = methodMobil.jalan
 }
 
+//? Sampai disini baru kita buat the REAL OBJEK, karna sebelumnya hanya membuat mesinnya
 let toyota = new Mobil("Toyota",2002);  //* inisiasi objek dengan keyword new sebagai objek baru
 let ferrari = new Mobil("Ferrari",2005);
 
@@ -104,4 +108,5 @@ function Mobilmodern(nama,tahun_keluar){
     return mobil
 }
 
+//? Sampai disini baru kita buat the REAL OBJEK, karna sebelumnya hanya membuat mesinnya
 let tesla = Mobilmodern("Tesla",2010)
