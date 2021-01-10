@@ -1,11 +1,19 @@
-//! Execution Context Javascript
+//! Execution Context dan Scope Javascript
 //? Execution context gampangnya adalah bagaimana cara javascript mengeksekusi kodenya
 console.log("Hello dari execution context js")
 
-//? Contoh
+//? Contoh scope
 
+//? Kita bisa mengakses window, dan this karna merupakan objek default dari javascript
+console.log(window)
+console.log(this)
+
+//? Contoh execution
 console.log(nama); //* kita mengeluarkan output sebuah variabel yg sudah diinisiasi "DIBAWAH"  
-var nama = "Reza"
+var nama = "Reza" //* variabel ini di hoisting (atau dlm bhs indonesia di arak ke atas) makanya kluarnya undefine
+
+//! IMPORTANT
+//! itulah kenapa datang keyword let, dan const 
 
 //* akan mengeluarkan output "undefined"
 //? Karna pada dasarnya javascript terdiri dari fase "creation" dan "execution"
