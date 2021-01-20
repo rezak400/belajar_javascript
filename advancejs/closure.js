@@ -1,5 +1,5 @@
 //! Closure
-//? Closure adalah sebuah function yang sebelumnya sudah memiliki, data/hasil atau bisa disebut environtment dari function lain
+//? Closure adalah sebuah function yang sebelumnya sudah memiliki data/hasil/environtment dari function lain
 console.log("Hello dari closure js")
 
 //? Contoh

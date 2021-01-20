@@ -3,6 +3,7 @@ console.log("Hello dari arrow function")
 
 //? Beberapa cara menulis function
 //! Function Declaration
+//! Function Declaration sangat buruk dipakai saat menggunakan this pada closure
 function sayHello(nama){
     return `Hello ${nama}`
 }
@@ -41,10 +42,4 @@ let jumlahHuruf2 = murid.map(nama => ({ nama, jumlah_huruf:nama.length }))
 console.log(jumlahHuruf2)
 console.table(jumlahHuruf2) //* baru tau nih console table, sangat membantu
 
-
-let mahasiswa = function(){
-    this.nama = "reza";
-    this.sayHello = function(){
-
-    }
-}
+//! NOTE : this pada arrow function mengacu ke scopenya sedangkan function biasa ( function declaration ) mengacu pada global karena hoisting
